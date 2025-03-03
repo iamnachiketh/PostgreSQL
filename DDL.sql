@@ -12,24 +12,19 @@ CREATE TABLE employee (
     hire_date DATE
 );
 
-CREATE TABLE department (
-    dept_id SERIAL PRIMARY KEY,
-    dept_name VARCHAR(50)
-);
+-- CREATE TABLE department (
+--     dept_id SERIAL PRIMARY KEY,
+--     dept_name VARCHAR(50)
+-- );
 
 -- Alter a table
 
-ALTER TABLE employee ADD COLUMN email VARCHAR(100) NOT NULL UNIQUE;
-
-ALTER TABLE employee 
-ALTER COLUMN first_name TYPE VARCHAR(100);
-
+ALTER TABLE employee ADD COLUMN email VARCHAR(100);
 
 -- Truncate a table
 
 TRUNCATE TABLE employee;
 
-
 -- Drop a table
 
-DROP TABLE employee;
+DROP TABLE employee.
